@@ -1,21 +1,41 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+/** @format */
+
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import HomeScreen from "./screens/HomeScreen";
+import ViewImage from "./screens/ViewImage";
+import Card from "./components/Card";
+import ListingDetailScreen from "./screens/ListingDetailScreen";
+import MessagesScreen from "./screens/MessagesScreen";
+import ListItem from "./components/ListItem";
+import Screen from "./components/Screen";
+import Icon from "./components/Icon";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    // // <View style={styles.container}>
+    // <MessagesScreen />
+    // // </View>
+    // // <ViewImage />
+    // <Screen>
+    //   <ListItem
+    //     title='Title'
+    //     subTitle='subTitle'
+    //     ImageComponent={<Icon name='email' />}
+    //   />
+    // </Screen>
+    // <View style={styles.container}>
+    //* </View> */
+    <MessagesScreen />
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    margin: "auto",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
