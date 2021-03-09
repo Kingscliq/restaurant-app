@@ -11,6 +11,7 @@ import MessagesScreen from "./screens/MessagesScreen";
 import ListItem from "./components/ListItem";
 import Screen from "./components/Screen";
 import Icon from "./components/Icon";
+import Accounts from "./screens/Accounts";
 
 export default function App() {
   return (
@@ -19,15 +20,13 @@ export default function App() {
     // // </View>
     // // <ViewImage />
     // <Screen>
-    //   <ListItem
-    //     title='Title'
-    //     subTitle='subTitle'
-    //     ImageComponent={<Icon name='email' />}
-    //   />
+    //   <ListItem title='Title' ImageComponent={<Icon name='email' />} />
     // </Screen>
     // <View style={styles.container}>
     //* </View> */
-    <MessagesScreen />
+    // <MessagesScreen />
+    // <Accounts />
+    <HomeScreen />
   );
 }
 

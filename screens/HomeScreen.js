@@ -31,7 +31,7 @@ const HomeScreen = () => {
         />
       </View>
       <View style={styles.buttonContainer}>
-        <AppButton title='Login' />
+        <AppButton title='Login' color='primary' />
         <AppButton title='Sign Up' color='secondary' />
       </View>
     </ImageBackground>
@@ -41,7 +41,6 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    width: 400,
     justifyContent: "flex-end",
     alignItems: "center",
   },
@@ -54,6 +53,10 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingTop: 50,
     paddingHorizontal: 60,
+  },
+  secondaryButton: {
+    borderColor: Colors.primary,
+    borderWidth: 1,
   },
   homeScreenCard: {
     top: 50,
